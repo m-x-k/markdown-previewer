@@ -1,12 +1,15 @@
+body {
+  background-color: #b6d4de;
+}
 #container {
   padding: 50px;
+  background-color: lightblue;
 }
 h1 {
   text-align: center;
 }
 .bs-callout {
   padding: 20px;
-  margin: 20px 0;
   border: 1px solid #eee;
   border-left-width: 5px;
   border-radius: 3px;
@@ -16,4 +19,9 @@ h1 {
 }
 .note {
   font-style: italic;
+}
+#result {
+  background-color: white;
+}
+#markdown {
 }

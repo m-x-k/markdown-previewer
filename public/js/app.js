@@ -46,23 +46,27 @@ var MarkdownPreviewer = function (_React$Component) {
     value: function render() {
       return React.createElement(
         "div",
-        null,
+        { className: "row" },
         React.createElement(
           "p",
           { className: "note" },
           "Sample markdown has been provided for you to edit in realtime."
         ),
         React.createElement(
-          "form",
-          { onSubmit: this.handleSubmit, className: "form-group" },
-          React.createElement("textarea", {
-            value: this.state.value,
-            className: "form-control", rows: "20",
-            onChange: this.handleChange })
+          "div",
+          { id: "markdown", className: "col-md-6" },
+          React.createElement(
+            "form",
+            { onSubmit: this.handleSubmit, className: "form-group" },
+            React.createElement("textarea", {
+              value: this.state.value,
+              className: "form-control", rows: "20",
+              onChange: this.handleChange })
+          )
         ),
         React.createElement(
           "div",
-          { id: "result", className: "bs-callout bs-callout-info" },
+          { id: "result", className: "col-md-6 bs-callout bs-callout-info" },
           React.createElement("div", {
             dangerouslySetInnerHTML: { __html: this.state.result } })
         )
