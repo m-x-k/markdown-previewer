@@ -48,6 +48,11 @@ var MarkdownPreviewer = function (_React$Component) {
         "div",
         null,
         React.createElement(
+          "p",
+          { className: "note" },
+          "Sample markdown has been provided for you to edit in realtime."
+        ),
+        React.createElement(
           "form",
           { onSubmit: this.handleSubmit, className: "form-group" },
           React.createElement("textarea", {
