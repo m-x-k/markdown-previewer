@@ -63,7 +63,8 @@ var MarkdownPreviewer = function (_React$Component) {
         React.createElement(
           "div",
           { id: "result", className: "bs-callout bs-callout-info" },
-          this.state.result
+          React.createElement("div", {
+            dangerouslySetInnerHTML: { __html: this.state.result } })
         )
       );
     }
