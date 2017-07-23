@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "babel lib/ -d public/js/ --plugins transform-react-jsx --presets es2015,stage-2",
-    "start": "nodemon index.js --exec babel-node --presets es2015,stage-2",
-    "serve": "node index.js"
+    "dev": "nodemon index.js --exec babel-node --presets es2015,stage-2",
+    "start": "node index.js"
   },
   "dependencies": {
     "babel": "^6.23.0",
